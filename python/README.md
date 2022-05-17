@@ -4,7 +4,7 @@
 
 ### Table of Contents
 
-- [Challenge 01: Array Reverse](~/code-challenges/array-reverse/README.md)
+- [Challenge 01: Array Reverse](~/code-challenges/array_reverse/README.md)
 
 ### Folder and Challenge Setup
 
