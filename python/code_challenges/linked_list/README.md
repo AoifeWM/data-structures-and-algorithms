@@ -9,7 +9,7 @@ Big O time for this approach is O(1) because only 2 objects are being manipulate
 Big O space for this approach is O(n) because the space the list takes up is linearly proportional with the number of values in the list.
 
 ## API
-Availiable Classes and methods:
+Available Classes and methods:
 * LinkedList
   * Props:
     * `head` (stores reference to first item in the list)
