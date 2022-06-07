@@ -101,3 +101,14 @@ def test_insert_after():
     ll.insert_after(3, 2)
     assert ll.head.next.next.next.value == 3
     assert str(ll) == "{ 0 } -> { 1 } -> { 2 } -> { 3 } -> { 4 } -> NULL"
+
+
+def test_insert_failure():
+    node1 = Node(4)
+    node2 = Node(2, node1)
+    node3 = Node(1, node2)
+    node4 = Node(0, node3)
+    ll = LinkedList(node4)
+    assert not ll.insert_before(1, 7)
+    assert not ll.insert_after(1, "a")
+    assert str(ll) == "{ 0 } -> { 1 } -> { 2 } -> { 4 } -> NULL"
