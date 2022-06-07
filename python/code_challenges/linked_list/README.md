@@ -8,8 +8,17 @@ Write a system of linked lists which can be manually constructed with node objec
 
 ## Approach & Efficiency
 
-Big O time for this approach is O(1) because only 2 objects are being manipulated, no matter the size of the list: The head value of the linked list, the new node object that's being inserted. Everything else remains the same.
-Big O space for this approach is O(n) because the space the list takes up is linearly proportional with the number of values in the list.
+For this list as a whole:
+* Big O space is O(n) because the space the list takes up is linearly proportional with the number of nodes in the list.
+
+`insert` method:
+* Big O time for this approach is O(1) because only 2 objects are being manipulated, no matter the size of the list: The head value of the linked list, the new node object that's being inserted. Everything else remains the same.
+* Space big O: O(1): The script is making only one object and attaching it to a linked list that already exists, so no matter the input, this takes the same amount of storage space.
+
+`append`, `insert_before`, and `insert_after` methods:
+* Time Big O: O(n): The time it takes to traverse the linked list increases linearly with the size of the list.
+* Space big O: O(1): The script is making only one object and appending it to a linked list that already exists, so no matter the input, this takes the same amount of storage space.
+
 
 ## API
 
