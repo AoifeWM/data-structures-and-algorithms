@@ -56,6 +56,7 @@ def test_ll_to_string():
     node3 = Node(1, node2)
     ll = LinkedList(node3)
     assert ll.to_string() == "{ 1 } -> { 121 } -> { 12321 } -> NULL"
+    assert str(ll) == "{ 1 } -> { 121 } -> { 12321 } -> NULL"
 
 
 def test_multiple_insert_node():
@@ -67,3 +68,36 @@ def test_multiple_insert_node():
     assert ll.head.value is 8
     assert ll.head.next.value is 7
     assert ll.head.next.next is node2
+
+
+def test_append():
+    node1 = Node(4)
+    node2 = Node(2, node1)
+    node3 = Node(1, node2)
+    ll = LinkedList(node3)
+    ll.append(5)
+    ll.append(7)
+    assert ll.head.next.next.next.value == 5
+    assert ll.head.next.next.next.next.value == 7
+    assert str(ll) == "{ 1 } -> { 2 } -> { 4 } -> { 5 } -> { 7 } -> NULL"
+
+
+def test_insert_before():
+    node1 = Node(4)
+    node2 = Node(2, node1)
+    node3 = Node(1, node2)
+    ll = LinkedList(node3)
+    ll.insert_before(3, 4)
+    assert ll.head.next.next.value == 3
+    assert str(ll) == "{ 1 } -> { 2 } -> { 3 } -> { 4 } -> NULL"
+
+
+def test_insert_after():
+    node1 = Node(4)
+    node2 = Node(2, node1)
+    node3 = Node(1, node2)
+    node4 = Node(0, node3)
+    ll = LinkedList(node4)
+    ll.insert_after(3, 2)
+    assert ll.head.next.next.next.value == 3
+    assert str(ll) == "{ 0 } -> { 1 } -> { 2 } -> { 3 } -> { 4 } -> NULL"
