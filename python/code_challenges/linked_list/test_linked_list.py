@@ -112,3 +112,71 @@ def test_insert_failure():
     assert not ll.insert_before(1, 7)
     assert not ll.insert_after(1, "a")
     assert str(ll) == "{ 0 } -> { 1 } -> { 2 } -> { 4 } -> NULL"
+
+
+def test_kth():
+    node1 = Node(4)
+    node2 = Node(2, node1)
+    node3 = Node(1, node2)
+    node4 = Node(0, node3)
+    ll = LinkedList(node4)
+    assert ll.kth_from_end(0) == 4
+    assert ll.kth_from_end(2) == 1
+
+
+def test_kth_from_end_zero():
+    linked_list = LinkedList()
+    values = ["apples", "bananas", "cucumbers"]
+    for value in reversed(values):
+        linked_list.insert(value)
+    actual = linked_list.kth_from_end(0)
+    expected = "cucumbers"
+    assert actual == expected
+
+
+def test_kth_from_end_one():
+    linked_list = LinkedList()
+    values = ["apples", "bananas", "cucumbers"]
+    for value in reversed(values):
+        linked_list.insert(value)
+    actual = linked_list.kth_from_end(1)
+    expected = "bananas"
+    assert actual == expected
+
+
+def test_kth_from_end_two():
+    linked_list = LinkedList()
+    values = ["apples", "bananas", "cucumbers"]
+    for value in reversed(values):
+        linked_list.insert(value)
+    actual = linked_list.kth_from_end(2)
+    expected = "apples"
+    assert actual == expected
+
+
+@pytest.mark.skip("TODO")
+def test_kth_from_end_out_of_range():
+    linked_list = LinkedList()
+    values = ["apples", "bananas", "cucumbers"]
+    for value in reversed(values):
+        linked_list.insert(value)
+    with pytest.raises(TargetError):
+        linked_list.kth_from_end(3)
+
+
+@pytest.mark.skip("TODO")
+def test_kth_from_end_under_range():
+    linked_list = LinkedList()
+    values = ["apples", "bananas", "cucumbers"]
+    for value in reversed(values):
+        linked_list.insert(value)
+    with pytest.raises(TargetError):
+        linked_list.kth_from_end(-1)
+
+
+def test_kth_from_end_size_one():
+    linked_list = LinkedList()
+    linked_list.insert("apples")
+    actual = linked_list.kth_from_end(0)
+    expected = "apples"
+    assert actual == expected
