@@ -104,6 +104,27 @@ class LinkedList:
             current = current.next
         return does_include
 
+    def kth_from_end(self, k):
+        """
+        Returns the Kth value from the end of the list. K must be an integer that is less than or equal to the
+        length of the list.
+        """
+        counter = 0
+        current = self.head
+        length = None
+        while current:
+            counter += 1
+            current = current.next
+        if counter < k + 1:
+            raise Exception
+        else:
+            length = counter - k
+        current = self.head
+        while length - 1:
+            current = current.next
+            length -= 1
+        return current.value
+
     def to_string(self):
         """
         Returns a formatted string with the entire contents of the linked list, in this format: "{ 0 } -> { 1 } -> {
