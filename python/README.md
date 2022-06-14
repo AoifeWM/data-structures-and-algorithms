@@ -7,7 +7,7 @@
 - [Challenge 01: Array Reverse](./code_challenges/array_reverse/README.md)
 - [Challenge 02: Array insert shift](./code_challenges/array_insert_shift/README.md)
 - [Challenge 03: Binary Search of Sorted Array](./code_challenges/array_binary_search/README.md)
-- [Challenges 05 & 06: Linked Lists](./code_challenges/linked_list/README.md)
+- [Challenges 05 - 07: Linked Lists](./code_challenges/linked_list/README.md)
 
 ### Folder and Challenge Setup
 
