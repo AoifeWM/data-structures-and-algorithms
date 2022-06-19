@@ -8,6 +8,8 @@
 - [Challenge 02: Array insert shift](./code_challenges/array_insert_shift/README.md)
 - [Challenge 03: Binary Search of Sorted Array](./code_challenges/array_binary_search/README.md)
 - [Challenges 05 - 07: Linked Lists](./code_challenges/linked_list/README.md)
+- [Challenge 08: linkedlist zip](./code_challenges/linked_list_zip.md)
+- [Challenge 10: stacks and queues](./code_challenges/stacks_and_queues/README.md)
 
 ### Folder and Challenge Setup
 
