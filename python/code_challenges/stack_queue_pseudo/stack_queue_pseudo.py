@@ -24,10 +24,3 @@ class PseudoQueue:
     def dequeue(self):
         return self.stack.pop()
 
-
-if __name__ == "__main__":
-    pq = PseudoQueue()
-    pq.enqueue("apple")
-    print("guh")
-    pq.enqueue("frog")
-    # print(pq.dequeue())
