@@ -1,5 +1,5 @@
-from data_structures.invalid_operation_error import InvalidOperationError
-
+class InvalidOperationError(Exception):
+    pass
 
 class Node:
 

@@ -1,5 +1,8 @@
-from data_structures.invalid_operation_error import InvalidOperationError
-from stack import Stack
+# This fixes an import issue when this is loaded as a module in pytest vs. as a script
+if __name__ == "__main__":
+    from stack import Stack, InvalidOperationError
+else:
+    from ..stack_queue_pseudo.stack import Stack, InvalidOperationError
 
 
 class PseudoQueue:
@@ -11,27 +14,13 @@ class PseudoQueue:
     def enqueue(self, value):
         if self.stack.is_empty():
             self.stack.push(value)
-            print(self.stack.top.value)
         else:
             while self.stack.is_empty() is False:
                 self.temp.push(self.stack.pop())
-                print('yh')
             self.stack.push(value)
             while self.temp.is_empty() is False:
-                print("gh")
                 self.stack.push(self.temp.pop())
-        print("ENQUEUED PROPERLY")
-        print(self.stack.top.value)
-        print(self.stack.is_empty())
 
     def dequeue(self):
-        print("DEQUEUED PROPERLY")
         return self.stack.pop()
 
-
-if __name__ == "__main__":
-    pq = PseudoQueue()
-    pq.enqueue("apple")
-    print("guh")
-    pq.enqueue("frog")
-    # print(pq.dequeue())
