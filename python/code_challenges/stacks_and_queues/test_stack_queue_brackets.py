@@ -2,7 +2,7 @@ import pytest
 from code_challenges.stack_queue_brackets import multi_bracket_validation
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_validates_two_square_brackets():
     actual = multi_bracket_validation("[]")
     expected = True
