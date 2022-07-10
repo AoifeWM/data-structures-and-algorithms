@@ -40,6 +40,8 @@ class Stack:
             raise InvalidOperationError("Method not allowed on empty collection")
 
     def is_empty(self):
-        return not self.top
+        if self.top:
+            return False
+        return True
 
 
