@@ -10,6 +10,9 @@
 - [Challenges 05 - 07: Linked Lists](./code_challenges/linked_list/README.md)
 - [Challenge 08: linkedlist zip](./code_challenges/linked_list_zip.md)
 - [Challenge 10: stacks and queues](./code_challenges/stacks_and_queues/README.md)
+- [Challenge 11: Pseudoqueue](./code_challenges/stack_queue_pseudo/README.md)
+- [Challenge 15: trees](./code_challenges/trees/treesREADME.md)
+- [Challenge 16: treesmax](./code_challenges/trees/treemaxREADME.md)
 
 ### Folder and Challenge Setup
 

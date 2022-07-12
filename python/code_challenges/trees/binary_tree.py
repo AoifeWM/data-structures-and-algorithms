@@ -5,6 +5,7 @@ class BinaryTree:
 
     def __init__(self, root=None):
         self.root = root
+        self.counter = None
         pass
 
     def pre_order(self):
@@ -42,6 +43,19 @@ class BinaryTree:
         self._post_order(root.left, tree)
         self._post_order(root.right, tree)
         tree.append(root.value)
+
+    def find_maximum_value(self):
+        self.counter = self.root.value
+        self._tree_max(self.root)
+        return self.counter
+
+    def _tree_max(self, root):
+        if not root:
+            return
+        if root.value > self.counter:
+            self.counter = root.value
+        self._tree_max(root.left)
+        self._tree_max(root.right)
 
 
 class Node:
