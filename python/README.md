@@ -14,6 +14,7 @@
 - [Challenge 15: trees](./code_challenges/trees/treesREADME.md)
 - [Challenge 16: treesmax](./code_challenges/trees/treemaxREADME.md)
 - [Challenge 18: fizz buzz tree](./code_challenges/trees/tree_fizz_buzzREADME.md)
+- [Challenge 30: Hash Tables](./data_structures/README-hashtable.md)
 
 ### Folder and Challenge Setup
 
