@@ -8,13 +8,14 @@
 - [Challenge 02: Array insert shift](./code_challenges/array_insert_shift/README.md)
 - [Challenge 03: Binary Search of Sorted Array](./code_challenges/array_binary_search/README.md)
 - [Challenges 05 - 07: Linked Lists](./code_challenges/linked_list/README.md)
-- [Challenge 08: linkedlist zip](./code_challenges/linked_list_zip.md)
+- [Challenge 08: linkedlist zip](./code_challenges/README-linked-list-zip.md)
 - [Challenge 10: stacks and queues](./code_challenges/stacks_and_queues/README.md)
 - [Challenge 11: Pseudoqueue](./code_challenges/stack_queue_pseudo/README.md)
-- [Challenge 15: trees](./code_challenges/trees/treesREADME.md)
-- [Challenge 16: treesmax](./code_challenges/trees/treemaxREADME.md)
-- [Challenge 18: fizz buzz tree](./code_challenges/trees/tree_fizz_buzzREADME.md)
-- [Challenge 30: Hash Tables](./data_structures/README-hashtable.md)
+- [Challenge 15: trees](./code_challenges/trees/README-trees.md)
+- [Challenge 16: treesmax](./code_challenges/trees/README-treemax.md)
+- [Challenge 18: fizz buzz tree](./code_challenges/trees/README-tree-fizz-buzz.md)
+- [Challenge 30: Hashtables](./data_structures/README-hashtable.md)
+- [Challenge 31: First Repeated Word using hashtable](./code_challenges/README-hashtable-repeated-word.md)
 
 ### Folder and Challenge Setup
 
