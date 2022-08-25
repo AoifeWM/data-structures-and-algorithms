@@ -58,4 +58,4 @@ The hash is found by converting characters into their unicode values, then multi
   * Returns: list with all keys in the hashtable.
 * hash ()
   * Arguments: key
-  * Returns: the index that a key-value pair with the given key would be stored in if it were entered into the list. 
+  * Returns: the index that a key-value pair with the given key would be stored in if it were entered into the list.
