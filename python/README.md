@@ -16,6 +16,7 @@
 - [Challenge 18: fizz buzz tree](./code_challenges/trees/README-tree-fizz-buzz.md)
 - [Challenge 30: Hashtables](./data_structures/README-hashtable.md)
 - [Challenge 31: First Repeated Word using hashtable](./code_challenges/README-hashtable-repeated-word.md)
+- [Challenge 32: Tree intersection](./code_challenges/README-tree-intersection.md)
 
 ### Folder and Challenge Setup
 
