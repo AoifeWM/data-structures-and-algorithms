@@ -17,6 +17,7 @@
 - [Challenge 30: Hashtables](./data_structures/README-hashtable.md)
 - [Challenge 31: First Repeated Word using hashtable](./code_challenges/README-hashtable-repeated-word.md)
 - [Challenge 32: Tree intersection](./code_challenges/README-tree-intersection.md)
+- [Challenge 33: Hashmap Left Join](./code_challenges/README-hashtable-left-join.md)
 
 ### Folder and Challenge Setup
 
