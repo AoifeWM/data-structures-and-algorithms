@@ -142,3 +142,37 @@ def test_get_nodes_empty():
     actual = graph.get_nodes()
 
     assert actual == expected
+
+
+def test_depth_first():
+    gp = Graph()
+    node = gp.add_node("a")
+    node2 = gp.add_node("b")
+    node3 = gp.add_node("c")
+    node4 = gp.add_node("d")
+    node5 = gp.add_node("e")
+    node6 = gp.add_node("f")
+    node7 = gp.add_node("g")
+    node8 = gp.add_node("h")
+    gp.add_edge(node, node2)
+    gp.add_edge(node2, node)
+    gp.add_edge(node, node4)
+    gp.add_edge(node4, node)
+    gp.add_edge(node2, node3)
+    gp.add_edge(node3, node7)
+    gp.add_edge(node3, node2)
+    gp.add_edge(node7, node3)
+    gp.add_edge(node4, node5)
+    gp.add_edge(node5, node4)
+    gp.add_edge(node4, node6)
+    gp.add_edge(node6, node4)
+    gp.add_edge(node4, node8)
+    gp.add_edge(node8, node4)
+
+    actual = [node, node4, node8, node6, node5, node2, node3, node7, ]
+    expected = gp.depth_first(node)
+    parsed = [item.value for item in expected]
+    print("\n\n", parsed, "\n\n")
+    assert len(actual) == len(expected)
+    for item in actual:
+        assert item in expected
