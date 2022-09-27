@@ -34,7 +34,7 @@ class Graph:
         if end not in self._vertices:
             raise KeyError("end node not found", end)
         for edge in start.neighbors:
-            if edge.end == end:
+            if edge.vertex == end:
                 start.neighbors.remove(edge)
         raise KeyError("edge not found", start, end)
 
@@ -49,6 +49,17 @@ class Graph:
     def size(self):
         return len(self._vertices)
 
+    def depth_first(self, node):
+        return self._walk(node, [])
+
+    def _walk(self, node, found):
+        if node not in found:
+            found.append(node)
+        for edge in node.neighbors:
+            if edge.vertex not in found:
+                found = self._walk(edge.vertex, found)
+        return found
+
 
 class Vertex:
 
@@ -62,8 +73,6 @@ class Edge:
     def __init__(self, vertex, weight):
         self.vertex = vertex
         self.weight = weight
-
-
 
 # gp = Graph()
 # node = gp.add_node(Vertex(5))
